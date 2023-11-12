@@ -1,3 +1,6 @@
+"""هذا هو الكود الاساسي لا تقم بالتعديل علية"""
+
+"""py moa_yad.t.me GitHub@moa-yad"""
 import os
 
 try:
