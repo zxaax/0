@@ -42,6 +42,7 @@ if phone is not None:
     print("تم تعيين رقم الهاتف .")
 else:
     print("لم يتم تعيين رقم الهاتف .")
+    exit()
 
 client = TelegramClient('session', api_id, api_hash)
 
