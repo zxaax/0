@@ -21,28 +21,31 @@ from telethon.errors import (
 from telethon.sessions import StringSession
 
 api_id = os.environ.get("apiid")
-if api_id is not None:
+if api_id is not None and api_id != '':
     print("تم تعيين الايبي ايدي .")
 else:
     print("لم يتم تعيين الايبي ايدي .")
 
 api_hash = os.environ.get("apihash")
-if api_hash is not None:
+if api_hash is not None and api_hash != '':
     print("تم تعيين الايبي هاش .")
 else:
     print("لم يتم تعيين الايبي هاش .")
 
 phone = os.environ.get("phone")
-if phone is not None:
+if phone is not None and phone != '':
     print("تم تعيين رقم الهاتف .")
 else:
     print("لم يتم تعيين رقم الهاتف .")
-    exit()
-
-client = TelegramClient('session', api_id, api_hash)
 
 try:
+    client = TelegramClient('session', api_id, api_hash)
     client.connect()
+except ValueError:
+    print('قم بملى المتغيرات بالكامل وبعدها اعد التشغيل .')
+    exit()
+
+try:
     if not client.is_user_authorized():
         client.send_code_request(phone)
         try:
