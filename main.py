@@ -1,13 +1,8 @@
 """هذا هو الكود الاساسي لا تقم بالتعديل علية"""
 
 """py moa_yad.t.me GitHub@moa-yad"""
-import os
 
-try:
-    import pyaes
-except ImportError:
-    print("pyaes : يتم تنصيب")
-    os.system("pip install pyaes > log2 2>1")
+import os
 
 from telethon.sync import TelegramClient
 
