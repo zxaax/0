@@ -15,6 +15,7 @@ from telethon.errors import (
     PhoneNumberInvalidError,
     PhoneNumberFloodError,
     AuthKeyUnregisteredError,
+    FloodWaitError,
     ApiIdInvalidError
 )
 
@@ -77,6 +78,8 @@ except PhoneNumberFloodError:
     print('عدد كبير من محاولات تسجيل الدخول ، حاول بعد 24 ساعة .')
 except ApiIdInvalidError:
     print('ايبي ايدي/هاش  خطأ ، قم بتصحية وحاول مجدداً .')
+except FloodWaitError as e:
+    print( f'عدد كبير من محاولات تسجيل الدخول ، حاول بعد {e.seconds} ثانية .')
 except Exception as e:
     print(f'خطأ غير معرف: {e}')
 try:
