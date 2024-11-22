@@ -301,7 +301,7 @@
         "    uploaded = files.upload()\n",
         "    for fn in uploaded.keys():\n",
         "        if fn.startswith(\"env\") or fn == \".env\":\n",
-        "            os.system(f\"mv {fn} env\")\n",
+        "            !mv '{fn}' env\n",
         "            print('بنجاح env تم رفع ملف')\n",
         "            env_stats = 1\n",
         "        else:\n",
