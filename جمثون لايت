@@ -18,11 +18,11 @@
       "cell_type": "markdown",
       "source": [
         "\n",
-        "<h1>Tepthon light / تيبثون لايت</h1>\n",
+        "<h1>jmthon light / جمثون لايت</h1>\n",
         "\n",
         "---\n",
         "\n",
-        "![Tepthon session photo ](https://github.com/tepthon-arabic/Colab/blob/go/jmthon_light.jpg?raw=true)"
+        "![jmthon session photo ](https://github.com/MOA-YAD/0/blob/go/jmthon_light.jpg?raw=true)"
       ],
       "metadata": {
         "id": "MyRXkPTf8jjH"
@@ -41,7 +41,7 @@
         "<h4>\n",
         "اداة تقوم بتنصيب\n",
         "\n",
-        "[سورس تيبثون](https://t.me/Tepthon/689)\n",
+        "[سورس جمثون](https://t.me/JMTHON/689)\n",
         "\n",
         "على حساب تلجرام الخاص بك\n",
         "\n",
@@ -75,7 +75,7 @@
         "\n",
         " ```ايبي_ايدي``` ➘\n",
         "\n",
-        " ```ايبي_هاش```➙ [Tepthon.deno.dev](Tepthon.deno.dev)\n",
+        " ```ايبي_هاش```➙ [jmthon.deno.dev](jmthon.deno.dev)\n",
         "\n",
         " ```سيشن_كود```➚\n",
         "\n",
@@ -360,17 +360,17 @@
         "except NameError:\n",
         "    pass\n",
         "    env_stats = None\n",
-        "if not os.path.exists(\"Tepthon\"):\n",
+        "if not os.path.exists(\"jmthon\"):\n",
         "    print(\"...جاري تحميل ملفات السورس\")\n",
-        "    os.system(\"git clone https://github.com/tepthon-arabic/Tepthon Tepthon>> log 2>&1\")\n",
+        "    os.system(\"git clone https://github.com/thejmthon/jmthon jmthon>> log 2>&1\")\n",
         "if not os.path.isfile(\"lib/packages.zip\"):\n",
         "    print(\"...جاري تحميل المكاتب\")\n",
         "    os.system(\"git clone -b lib https://github.com/MOA-YAD/0 lib >> log 2>&1\")\n",
-        "if not os.path.exists(\"Tepthon/ytdl\"):\n",
+        "if not os.path.exists(\"jmthon/ytdl\"):\n",
         "    print(\"...جاري فك الضغط\")\n",
-        "    os.system(\"sudo unzip lib/packages.zip -d Tepthon >> log1\")\n",
+        "    os.system(\"sudo unzip lib/packages.zip -d jmthon >> log1\")\n",
         "    print(\"...جاري تثبيت المكاتب\")\n",
-        "    os.system(\"cd Tepthon && sudo dpkg -i *.deb >> log2 2>&1 && sudo apt-get install -f >> log2 2>&1\")\n",        "\n",
+        "    os.system(\"cd jmthon && sudo dpkg -i *.deb >> log2 2>&1 && sudo apt-get install -f >> log2 2>&1\")\n",        "\n",
         "def contains_value(value, target):\n",
         "    if isinstance(target, list):\n",
         "        return any(contains_value(value, item) for item in target)\n",
@@ -394,9 +394,9 @@
         "            with open('env', 'w') as file:\n",
         "                file.write(env_content)\n",
         "\n",
-        "            os.system(\"rm -rf ./Tepthon/.env && cp env ./Tepthon/.env\")\n",
+        "            os.system(\"rm -rf ./jmthon/.env && cp env ./jmthon/.env\")\n",
         "            print(\"env تم تعيين ملف\")\n",
-        "            !cd Tepthon && python -m Tepthon\n",
+        "            !cd jmthon && python -m jmthon\n",
         "            return\n",
         "    except NameError:\n",
         "        pass\n",
@@ -407,13 +407,12 @@
         "\n",
         "    if os.path.isfile(\"env\"):\n",
         "        print(\"env تم ايجاد ملف\")\n",
-        "        os.system(\"rm -rf ./Tepthon/.env && cp env ./Tepthon/.env\")\n",
+        "        os.system(\"rm -rf ./jmthon/.env && cp env ./jmthon/.env\")\n",
         "        print(\"env تم تعيين ملف\")\n",
         "        print(\"!....جاري بدأ التشغيل\")\n",
         "        print(\"---------------------\")\n",
         "        print(\"---------------------\")\n",
-        "        !cd Tepthon && python -m Tepthon\n",
-        "        !pip3 install Telethon
+        "        !cd jmthon && python -m jmthon\n",
         "        return\n",
         "    elif not os.path.isfile(\"env\"):\n",
         "        print(\"env لم يتم ايجاد ملف\")\n",
@@ -430,7 +429,7 @@
     {
       "cell_type": "markdown",
       "source": [
-        "<h6>©moa-yad - Tepthon</h6>"
+        "<h6>©moa-yad - jmthon</h6>"
       ],
       "metadata": {
         "id": "Dxm_Lbs9mZ7j"
