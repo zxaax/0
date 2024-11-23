@@ -360,7 +360,7 @@
         "except NameError:\n",
         "    pass\n",
         "    env_stats = None\n",
-        "if not os.path.exists(\"jmthon\"):\n",
+        "if not os.path.exists(\"Tepthon\"):\n",
         "    print(\"...جاري تحميل ملفات السورس\")\n",
         "    os.system(\"git clone https://github.com/tepthon-arabic/Tepthon Tepthon>> log 2>&1\")\n",
         "if not os.path.isfile(\"lib/packages.zip\"):\n",
@@ -370,7 +370,7 @@
         "    print(\"...جاري فك الضغط\")\n",
         "    os.system(\"sudo unzip lib/packages.zip -d Tepthon >> log1\")\n",
         "    print(\"...جاري تثبيت المكاتب\")\n",
-        "    os.system(\"cd jmthon && sudo dpkg -i *.deb >> log2 2>&1 && sudo apt-get install -f >> log2 2>&1\")\n",        "\n",
+        "    os.system(\"cd Tepthon && sudo dpkg -i *.deb >> log2 2>&1 && sudo apt-get install -f >> log2 2>&1\")\n",        "\n",
         "def contains_value(value, target):\n",
         "    if isinstance(target, list):\n",
         "        return any(contains_value(value, item) for item in target)\n",
@@ -429,7 +429,7 @@
     {
       "cell_type": "markdown",
       "source": [
-        "<h6>©moa-yad - jmthon</h6>"
+        "<h6>©moa-yad - Tepthon</h6>"
       ],
       "metadata": {
         "id": "Dxm_Lbs9mZ7j"
