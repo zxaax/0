@@ -1,4 +1,4 @@
-"""هذا هو الكود الاساسي لا تقم بالتعديل علية"""
+"""هذا هو الكود الاساسي لا تقم بالتعديل عليه"""
 
 """py moa_yad.t.me GitHub@moa-yad"""
 
@@ -15,20 +15,20 @@ try:
     phone_data = {"phone": phone}
     send_code = requests.post("https://my.telegram.org/auth/send_password", data=phone_data).json()["random_hash"]
 except:
-    print("فشل ارسال رمز التحقق.")
-    print("اما رقم الهاتف خطأ ، او عدد كبير من المحاولات .")
+    print("فشل إرسال رمز التحقق.")
+    print("اما رقم الهاتف خطأ، أو عدد كبير من المحاولات .")
     exit()
 try:
-    code = input("قم بادخال رمز التحقق : ")
+    code = input("قم بإدخال رمز التحقق : ")
     payload = {"phone": phone, "random_hash": send_code, "password": code}
     login_response = requests.post("https://my.telegram.org/auth/login", data=payload)
     if "Invalid confirmation code!" in login_response.text:
-        print("الرمز خطأ اعد المحاولة من جديد.")
-        code = input("قم بادخال رمز التحقق : ")
+        print("الرمز خطأ أعد المحاولة من جديد.")
+        code = input("قم بإدخال رمز التحقق : ")
         payload = {"phone": phone, "random_hash": send_code, "password": code}
         login_response = requests.post("https://my.telegram.org/auth/login", data=payload)
         if "Invalid confirmation code!" in login_response.text:
-            print("رمز التحقق خطأ ، فشل الاستخراج.")
+            print("رمز التحقق خطأ، فشل الاستخراج.")
             exit()
 
 except requests.exceptions.RequestException:
@@ -40,7 +40,7 @@ app = requests.post("https://my.telegram.org/apps", cookies=cookies_dict).text
 response = bs4.BeautifulSoup(app, features="html.parser")
 
 if response.title.string == "Create new application":
-    print("لم يتم استخراج الايبيات في حسابك من قبل .")
+    print("لم يتم استخراج الأيبيات في حسابك من قبل .")
     finding = response.find("input", {"name": "hash"}).get("value")
     AppInfo = {
         "hash": finding,
@@ -54,17 +54,17 @@ if response.title.string == "Create new application":
     try:
         app = requests.post("https://my.telegram.org/apps/create", data=AppInfo, cookies=cookies_dict).text
         if app != "ERROR":
-            print("يتم استخراج الايبيات")
+            print("يتم استخراج الأيبيات")
             create_app = requests.get("https://my.telegram.org/apps", cookies=cookies_dict).text
             read_app = bs4.BeautifulSoup(create_app, features="html.parser")
             env = read_app.find_all("span", {"class": "form-control input-xlarge uneditable-input"})
             api_id = env[0].string
             api_hash = env[1].string
 
-            print(f"ايبي-ايدي :{api_id}")
-            print(f"ايبي-هاش :{api_hash}")
+            print(f"أيبي-أيدي :{api_id}")
+            print(f"أيبي-هاش :{api_hash}")
         else:
-            print("حسابك محظور من استخراج الايبيات .")
+            print("حسابك محظور من استخراج الأيبيات .")
     except:
         print("فشل الاستخراج خطأ في الاتصال .")
 
