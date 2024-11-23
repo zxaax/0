@@ -366,7 +366,7 @@
         "if not os.path.isfile(\"lib/packages.zip\"):\n",
         "    print(\"...جاري تحميل المكاتب\")\n",
         "    os.system(\"git clone -b lib https://github.com/Tepthonee/Deploy-C lib >> log 2>&1\")\n",
-        "if not os.path.exists(\"jmthon/ytdl\"):\n",
+        "if not os.path.exists(\"Tepthon/ytdl\"):\n",
         "    print(\"...جاري فك الضغط\")\n",
         "    os.system(\"sudo unzip lib/packages.zip -d Tepthon >> log1\")\n",
         "    print(\"...جاري تثبيت المكاتب\")\n",
