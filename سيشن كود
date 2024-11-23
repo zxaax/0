@@ -279,7 +279,7 @@
         "\n",
         "from google.colab.patches import cv2_imshow\n",
         "\n",
-        "img = urllib.request.urlopen(\"https://github.com/MOA-YAD/0/blob/go/photo.jpg?raw=true\"); imgg = np.asarray(bytearray(img.read()), dtype=np.uint8); image = cv2.imdecode(imgg, cv2.IMREAD_COLOR); cv2_imshow(image)\n",
+        "img = urllib.request.urlopen(\"https://github.com/Tepthonee/Deploy-C/blob/go/photo.jpg?raw=true\"); imgg = np.asarray(bytearray(img.read()), dtype=np.uint8); image = cv2.imdecode(imgg, cv2.IMREAD_COLOR); cv2_imshow(image)\n",
         "\n",
         "try:\n",
         "    session = session_ide_set.value\n",
