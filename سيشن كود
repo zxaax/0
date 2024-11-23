@@ -327,10 +327,10 @@
         "else:\n",
         "     if session == \"تيليثون\":\n",
         "         os.system(\"git clone -b telethon https://github.com/Tepthonee/Deploy-C.git > log 2>1\")\n",
-        "         !python 0/main.py\n",
+        "         !python Deploy-C/main.py\n",
         "     elif session == \"بايروجرام\":\n",
         "         os.system(\"git clone -b pyrogram https://github.com/Tepthonee/Deploy-C.git > log 2>1\")\n",
-        "         !python 0/main.py"
+        "         !python Deploy-C/main.py"
       ],
       "metadata": {
         "id": "hMJejgbw_C1X",
