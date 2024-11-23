@@ -18,11 +18,11 @@
       "cell_type": "markdown",
       "source": [
         "\n",
-        "<h1>jmthon session / سيشن جمثون</h1>\n",
+        "<h1>Tepthon Session / سيشن تيبثون</h1>\n",
         "\n",
         "---\n",
         "\n",
-        "![jmthon session photo ](https://github.com/MOA-YAD/0/blob/go/photo.jpg?raw=true)"
+        "![Tepthon Session Photo ](https://github.com/MOA-YAD/0/blob/go/photo.jpg?raw=true)"
       ],
       "metadata": {
         "id": "LIOfiQxgQtIS"
@@ -35,13 +35,13 @@
         "---\n",
         "---\n",
         "\n",
-        "<h1>معلومات عن الاداة</h1>\n",
+        "<h1>معلومات عن الأداة:</h1>\n",
         "\n",
         "--- ---\n",
         "<h4>\n",
-        "اداة تقوم باستخراج سيشن كود\n",
+        "أداة تقوم باستخراج كود السيشن\n",
         "\n",
-        "الخاص بتنصيب سورس جمثون باستعمال\n",
+        "الخاص بتنصيب سورس تيبثون باستعمال\n",
         "\n",
         "مكتبة\n",
         "\n",
@@ -65,12 +65,12 @@
         "<h1> الخطوات </h1>\n",
         "\n",
         "---\n",
-        "```الخطوة الاولى``` : تقوم باستخراج او استرجاع إيبي ايدي و إيبي هاش\n",
+        "```الخطوة الأولى``` : تقوم باستخراج أو استرجاع أيبي ايدي و أيبي هاش\n",
         "\n",
         "من الموقع الخاص\n",
         "[بالتلجرام](https://my.telegram.org/)\n",
         "\n",
-        "او من قسم الإيبيات\n",
+        "أو من قسم الأيبيات\n",
         "\n",
         "---"
       ],
@@ -81,9 +81,9 @@
     {
       "cell_type": "code",
       "source": [
-        "# @title  قسم الإيبيات\n",
+        "# @title  قسم الأيبيات\n",
         "\n",
-        "\"\"\"هذا هو الكود الاساسي لا تقم بالتعديل علية\"\"\"\n",
+        "\"\"\"هذا هو الكود الأساسي لا تقم بالتعديل عليه\"\"\"\n",
         "\n",
         "\"\"\"py moa_yad.t.me GitHub@moa-yad\"\"\"\n",
         "\n",
@@ -104,7 +104,7 @@
         "img = urllib.request.urlopen(\"https://github.com/MOA-YAD/0/blob/go/tgapp.jpg?raw=true\"); imgg = np.asarray(bytearray(img.read()), dtype=np.uint8); image = cv2.imdecode(imgg, cv2.IMREAD_COLOR); cv2_imshow(image)\n",
         "\n",
         "if not os.path.exists(\"tgapp\"):\n",
-        "    os.system(\"git clone -b tgapp https://github.com/MOA-YAD/0.git tgapp > log 2>1\")\n",
+        "    os.system(\"git clone -b tgapp https://github.com/Tepthonee/0.git tgapp > log 2>1\")\n",
         "\n",
         "app_shortname_input = widgets.Text(description=\"عنوان_التطبيق :\")\n",
         "phone_input = widgets.Text(description=\"رقم_الهاتف :\")\n",
@@ -176,15 +176,15 @@
       "source": [
         "# @title قسم تعيين المتغيرات\n",
         "\n",
-        "\"\"\"هذا هو الكود الاساسي لا تقم بالتعديل علية\"\"\"\n",
+        "\"\"\"هذا هو الكود الأساسي لا تقم بالتعديل عليه\"\"\"\n",
         "\n",
         "\"\"\"py moa_yad.t.me GitHub@moa-yad\"\"\"\n",
         "import ipywidgets as widgets\n",
         "from IPython.display import display\n",
         "\n",
         "session_ide_set = widgets.Dropdown(options=['بايروجرام', 'تيليثون'], value=None, description=\"نوع_السيشن:\")\n",
-        "api_id_input = widgets.Text(description=\"ايبي_ايدي :\")\n",
-        "api_hash_input = widgets.Text(description=\"ايبي_هاش :\")\n",
+        "api_id_input = widgets.Text(description=\"أيبي_أيدي :\")\n",
+        "api_hash_input = widgets.Text(description=\"أيبي_هاش :\")\n",
         "phone_input = widgets.Text(description=\"رقم_الهاتف :\")\n",
         "\n",
         "display(session_ide_set)\n",
@@ -249,7 +249,7 @@
         "---\n",
         "بعد تعيين المتغيرات بنجاح\n",
         "\n",
-        "تنتقل الى الخطوة الثالثة\n",
+        "تنتقل إلى الخطوة الثالثة\n",
         "\n",
         "---\n",
         "```الخطوة الثالثة``` : تقوم بتشغيل القسم الخاص باستخراج السيشن\n",
@@ -265,7 +265,7 @@
       "source": [
         "# @title قسم استخراج السيشن\n",
         "\n",
-        "\"\"\"هذا هو الكود الاساسي لا تقم بالتعديل علية\"\"\"\n",
+        "\"\"\"هذا هو الكود الأساسي لا تقم بالتعديل عليه\"\"\"\n",
         "\n",
         "\"\"\"py moa_yad.t.me GitHub@moa-yad\"\"\"\n",
         "\n",
@@ -342,7 +342,7 @@
     {
       "cell_type": "markdown",
       "source": [
-        "<h6>©moa-yad - jmthon</h6>"
+        "<h6>©moa-yad - Tepthon</h6>"
       ],
       "metadata": {
         "id": "EBqU5iFJvyjv"
