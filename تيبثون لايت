@@ -413,6 +413,7 @@
         "        print(\"---------------------\")\n",
         "        print(\"---------------------\")\n",
         "        !cd Tepthon && python -m Tepthon\n",
+        "        !pip3 install Telethon
         "        return\n",
         "    elif not os.path.isfile(\"env\"):\n",
         "        print(\"env لم يتم ايجاد ملف\")\n",
